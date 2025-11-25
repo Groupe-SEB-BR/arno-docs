@@ -1,0 +1,10 @@
+site_name: Arno Store
+nav:
+  - Home: index.md
+  - About: about.md
+  - Custom Features:
+    - Home page:
+      - Main Categories: custom-features/home/main-categories.md
+theme:
+  name: shadcn
+
