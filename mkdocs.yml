@@ -1,10 +1,13 @@
 site_name: Arno Store
 nav:
   - Home: index.md
-  - About: about.md
   - Custom Features:
-    - Home page:
-      - Main Categories: custom-features/home/main-categories.md
+    - Main Categories: custom-features/home/main-categories.md
+    - Special Selection: custom-features/home/special-selection.md
+    - Black Friday 2025: custom-features/black-friday-2025.md
+    - Home Tabs: custom-features/home/home-tabs.md
+    - Blog Post: custom-features/pdp/blog-pdp.md
+    - Enriched Content: custom-features/pdp/enriched-content.md
 theme:
   name: shadcn
 
