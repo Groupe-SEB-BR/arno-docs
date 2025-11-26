@@ -29,6 +29,16 @@ store/interfaces.json
 | categories | string | Yes | [] | Array de objetos com os dados das categorias |
 | shouldRender | boolean | Yes | false | Deve renderizar o componente ou não? |
 
+### Props de `categories`
+
+Cada objeto no array de `categories` deve ter as seguintes propriedades:
+
+| Property | Type   | Required | Description                           |
+| -------- | ------ | -------- | ------------------------------------- |
+| image    | string | Yes      | URL ou caminho da imagem      |
+| title    | string | Yes       | Título da categoria                     |
+| href     | string | Yes      | URL de destino do botão CTA           |
+
 ## Examples
 
 ```jsx

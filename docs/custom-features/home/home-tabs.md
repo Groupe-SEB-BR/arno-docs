@@ -1,34 +1,44 @@
-# Home tabs
+# Home Tabs
 
-Também conhecido como Vitrine Multibranding, esse componente cria uma vitrine 
+Esse componente mostra uma vitrine de até 3 abas, cada uma com até 3 cards. A cada 30 segundos as abas ativas são alteradas.
 
-- É editável pelo Site Editor? ✅
-- Página: Home
+![image](../../assets/main-categories.png)
 
-O nome do campo de edição dentro do Site Editor é Home Tabs
+## Usage
 
+react/HomeTabs.js
 
-Também é possível localizar o campo de edição usando esse botão:
+```jsx
+import HomeTabs from './components/HomeTabs';
 
+export default HomeTabs;
+```
 
-Após clicar no botão, basta selecionar a área do site que gostaria de ser editada
-xxxxxxxxxxxxxxxx
+store/interfaces.json
 
-Isso vai abrir o campo para edição
+```json
+  "custom-arno-home-tabs": {
+    "component": "HomeTabs"
+  },
+```
 
-O botão de “Deve aparecer” permite que toda a sessão seja removida do site sem que seja necessário excluir o conteúdo do Site Editor.
+## Props
 
-A sessão de tabs representa cada botão da Vitrine:
+| Prop         | Type             | Required | Default | Description                                  |
+| ------------ | ---------------- | -------- | ------- | -------------------------------------------- |
+| tabs         | array of objects | Yes      | []      | Array de objetos com os dados das categorias |
+| shouldRender | boolean          | Yes      | false   | Deve renderizar o componente ou não?         |
 
+## Examples
 
+```jsx
+  "store.home": {
+    "blocks": [
+      "custom-arno-home-tabs",
+    ]
+  }
+```
 
-O título altera o título da seção:
+## Notes
 
-
-Dentro de cards é alterado o conteúdo de cada card da seção: 
-
-
-
-Basta aplicar que o conteúdo será alterado dentro do site em produção.
-
-Todos os campos são opcionais, caso não tenha título, subtítulo, imagem ou botão, não vai ocorrer um erro no componente.
+Additional information, gotchas, or important considerations when using this component.

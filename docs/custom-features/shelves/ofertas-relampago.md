@@ -1,6 +1,10 @@
-# Conteúdo Enriquecido
+# Ofertas Relâmpago
 
-Conteúdo enriquecido injetado na página através do cadastro do produto no Catálogo da VTEX
+Vitrine de ofertas relâmpago
+
+## TODO
+
+Refatorar o código de ofertas relâmpago para não depender da vitrine de Black Friday
 
 ## Usage
 

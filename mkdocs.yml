@@ -4,10 +4,12 @@ nav:
   - Custom Features:
     - Main Categories: custom-features/home/main-categories.md
     - Special Selection: custom-features/home/special-selection.md
-    - Black Friday 2025: custom-features/black-friday-2025.md
     - Home Tabs: custom-features/home/home-tabs.md
+    - Ofertas Relâmpago: custom-features/shelves/ofertas-relampago.md
     - Blog Post: custom-features/pdp/blog-pdp.md
     - Enriched Content: custom-features/pdp/enriched-content.md
+    - Cross Selling: custom-features/pdp/cross-selling.md
+    - Form de Cupom Minicart: custom-features/minicart/coupon-form-minicart.md
 theme:
   name: shadcn
 
