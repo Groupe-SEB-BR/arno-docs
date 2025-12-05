@@ -2,6 +2,11 @@ site_name: Arno Store
 nav:
   - Home: index.md
   - Custom Features:
+    - Meta Tags: custom-features/home/meta-tags.md
+    - Data Structure: custom-features/home/data-structure.md
+    - Home Popup: custom-features/home/home-popup.md
+    - Slider Hero: custom-features/home/slider-hero.md
+    - Shelf Lancamentos: custom-features/home/shelf-lancamentos.md
     - Main Categories: custom-features/home/main-categories.md
     - Special Selection: custom-features/home/special-selection.md
     - Home Tabs: custom-features/home/home-tabs.md
@@ -11,5 +16,5 @@ nav:
     - Cross Selling: custom-features/pdp/cross-selling.md
     - Form de Cupom Minicart: custom-features/minicart/coupon-form-minicart.md
 theme:
-  name: shadcn
+  name: mkdocs
 
