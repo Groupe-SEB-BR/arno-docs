@@ -2,7 +2,7 @@
 
 Esse componente mostra uma vitrine de até 4 cards com informações promocionais da loja, com imagens e botões CTA.
 
-![image](../../assets/main-categories.png)
+![image](../../assets/special-selection.png)
 
 ## Usage
 

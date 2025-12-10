@@ -2,7 +2,7 @@
 
 Esse componente mostra uma vitrine de até 3 abas, cada uma com até 3 cards. A cada 30 segundos as abas ativas são alteradas.
 
-![image](../../assets/main-categories.png)
+![image](../../assets/home-tabs.png)
 
 ## Usage
 

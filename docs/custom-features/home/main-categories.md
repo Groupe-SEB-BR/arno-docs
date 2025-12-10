@@ -1,6 +1,6 @@
 # Main Categories
 
-Esse componente mostra as categorias da loja dentro da página inicial de Arno, Rochedo e Tefal
+Esse componente mostra pequenos cards em circulo com imagem e título onde levam a produtos dentro de sua categoria nas páginas iniciais de Arno, Rochedo e Tefal.
 
 ![image](../../assets/main-categories.png)
 
