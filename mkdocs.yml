@@ -14,8 +14,14 @@ nav:
     - Flash Sales: custom-features/shelves/ofertas-relampago.md
     - Blog Post: custom-features/pdp/blog-pdp.md
     - Enriched Content: custom-features/pdp/enriched-content.md
-    - Cross Selling: custom-features/pdp/cross-selling.md
+    - Cross Selling: custom-features/minicart/cross-selling.md
     - Form de Cupom Minicart: custom-features/minicart/coupon-form-minicart.md
+    - Resume Price Minicart: custom-features/minicart/custom-arno-resume-price-minicart.md
+    - Custom Price Minicart: custom-features/minicart/custom-price-minicart.md
+    - Custom Croct Popup: custom-features/minicart/custom-croct-popup.md
+    - Croct Controler Component: custom-features/minicart/croct-controler-component.md
+    - Custom Arno Discount Popup: custom-features/minicart/custom-arno-discount-popup.md
+    - Minicart Gift Bar: custom-features/minicart/arno-minicart-giftbar.md
 theme:
   name: mkdocs
 
