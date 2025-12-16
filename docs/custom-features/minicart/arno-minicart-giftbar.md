@@ -1,6 +1,6 @@
 # Minicart Gift Bar
 
- Este componente exibe um pop-up com um cupom de desconto quando um cliente adiciona itens ao carrinho, após um período de tempo determinado.
+Este componente exibe um pop-up com um cupom de desconto quando um cliente adiciona itens ao carrinho, após um período de tempo determinado.
 
 ## Usage
 
@@ -13,6 +13,7 @@ export default MinicartGiftBar;
 ```
 
 store/interfaces.json
+
 ```json
   "arno-minicart-giftbar": {
     "component": "MinicartGiftBar"
@@ -32,6 +33,7 @@ store/interfaces.json
 | giftIcon | string | Yes | false | Ícone do brinde |
 
 ### Schema
+
 ```json
   title: 'Minicart - Barra de brinde com frete',
     description: 'Exibe barra com metas: frete grátis e brinde',

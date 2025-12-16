@@ -1,27 +1,37 @@
 site_name: Arno Store
 nav:
-  - Home: index.md
-  - Custom Features:
-    - Meta Tags: custom-features/home/meta-tags.md
-    - Data Structure: custom-features/home/data-structure.md
-    - Home Popup: custom-features/home/home-popup.md
+  - Home:
+    - Popup: custom-features/home/home-popup.md
     - Slider Hero: custom-features/home/slider-hero.md
-    - Shelf Lancamentos: custom-features/home/shelf-lancamentos.md
-    - Flash Sales Home: custom-features/home/flash-sales-home.md
-    - Special Selection: custom-features/home/special-selection.md
     - Main Categories: custom-features/home/main-categories.md
     - Home Tabs: custom-features/home/home-tabs.md
-    - Flash Sales: custom-features/shelves/ofertas-relampago.md
+    - Shelf Lancamentos: custom-features/home/shelf-lancamentos.md
+    - Special Selection: custom-features/home/special-selection.md
+  - PDP:
     - Blog Post: custom-features/pdp/blog-pdp.md
     - Enriched Content: custom-features/pdp/enriched-content.md
+  - Minicart:
+    - Gift Bar: custom-features/minicart/arno-minicart-giftbar.md
+    - Coupon Form: custom-features/minicart/coupon-form-minicart.md
+    - Price Resume: custom-features/minicart/custom-arno-resume-price-minicart.md
+    - Custom Price: custom-features/minicart/custom-price-minicart.md
     - Cross Selling: custom-features/minicart/cross-selling.md
-    - Form de Cupom Minicart: custom-features/minicart/coupon-form-minicart.md
-    - Resume Price Minicart: custom-features/minicart/custom-arno-resume-price-minicart.md
-    - Custom Price Minicart: custom-features/minicart/custom-price-minicart.md
+    - Custom Arno Discount Popup: custom-features/minicart/custom-arno-discount-popup.md
+  - Global Features:
+    - Meta Tags: custom-features/home/meta-tags.md
+    - Data Structure: custom-features/home/data-structure.md
+    - Flash Sales: custom-features/home/flash-sales-home.md
+    - Flash Sales: custom-features/shelves/ofertas-relampago.md
     - Custom Croct Popup: custom-features/minicart/custom-croct-popup.md
     - Croct Controler Component: custom-features/minicart/croct-controler-component.md
-    - Custom Arno Discount Popup: custom-features/minicart/custom-arno-discount-popup.md
-    - Minicart Gift Bar: custom-features/minicart/arno-minicart-giftbar.md
 theme:
-  name: mkdocs
+  name: material
+  font:
+    text: Inter
+  palette:
+    primary: custom
+    scheme: arno
+extra_css:
+  - stylesheets/extra.css
+
 
