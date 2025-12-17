@@ -1,5 +1,9 @@
 site_name: Arno Store
 nav:
+  - Header:
+    - Black Bar: custom-features/header/top-black-bar.md
+    - Menu Bar: custom-features/header/new-menu-bar.md
+    - Black Button: custom-features/header/black-button.md
   - Home:
     - Popup: custom-features/home/home-popup.md
     - Slider Hero: custom-features/home/slider-hero.md
@@ -17,6 +21,9 @@ nav:
     - Custom Price: custom-features/minicart/custom-price-minicart.md
     - Cross Selling: custom-features/minicart/cross-selling.md
     - Custom Arno Discount Popup: custom-features/minicart/custom-arno-discount-popup.md
+  - Blog:
+    - Blog Categories: custom-features/blog/categories.md
+    - Blog Post: custom-features/blog/blog-post.md
   - Global Features:
     - Meta Tags: custom-features/home/meta-tags.md
     - Data Structure: custom-features/home/data-structure.md

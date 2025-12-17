@@ -1,6 +1,6 @@
 # Home Popup
 
-Esse componente mostrar um modal pop-up na home para capturar nome, e-mail e telefone do usuário (cadastro/lead) oferecendo um cupom de desconto de boas-vindas. Dentro da página inicial de Arno, Rochedo e Tefal
+Esse componente mostra um modal pop-up na home para capturar nome, e-mail e telefone do usuário (cadastro/lead) oferecendo um cupom de desconto de boas-vindas. Dentro da página inicial de Arno, Rochedo e Tefal
 
 ![image](../../assets/home-popup.png)
 

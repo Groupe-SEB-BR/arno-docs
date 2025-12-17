@@ -28,9 +28,7 @@ store/interfaces.json
 |------|------|----------|---------|-------------|
 | items | array | Yes | false | Campo para inserção de dados dentro do componente |
 
-<br>
-
-#### Props de `items`
+### Props de `items`
 
 ```json
   items: {
