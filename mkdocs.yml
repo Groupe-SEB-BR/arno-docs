@@ -22,8 +22,10 @@ nav:
     - Cross Selling: custom-features/minicart/cross-selling.md
     - Custom Arno Discount Popup: custom-features/minicart/custom-arno-discount-popup.md
   - Blog:
+    - Blog API Masterdata: custom-features/blog/api-masterdata.md
     - Blog Categories: custom-features/blog/categories.md
-    - Blog Post: custom-features/blog/blog-post.md
+    - Blog Category: custom-features/blog/category.md
+    - Blog Post: custom-features/blog/post.md
   - Global Features:
     - Meta Tags: custom-features/home/meta-tags.md
     - Data Structure: custom-features/home/data-structure.md
@@ -38,7 +40,19 @@ theme:
   palette:
     primary: custom
     scheme: arno
+  features:
+    - content.code.copy
 extra_css:
   - stylesheets/extra.css
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+
 
 
