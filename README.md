@@ -13,6 +13,7 @@ Documentation site built with [MkDocs](https://www.mkdocs.org/).
 
 ```bash
 pip install mkdocs
+pip install mkdocs-material
 ```
 
 ### Running Locally
