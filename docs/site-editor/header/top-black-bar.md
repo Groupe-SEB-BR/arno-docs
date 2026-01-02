@@ -7,21 +7,19 @@ Top BlackBar
 └── TopBlackBar
 ```
 
-![image](../../assets/site-editor/top-black-bar.png)
-
 ## Visão Geral
 
 O Top Black Bar é um componente de barra superior que exibe informações promocionais e links importantes no topo de todas as páginas do site. Este componente possui fundo escuro e apresenta três seções principais: um link para o blog, um link de bônus e um texto central destacando benefícios da loja (como parcelamento e desconto no PIX). É um elemento estratégico para comunicação institucional e promocional, mantendo-se fixo e visível durante a navegação.
 
 ## Onde encontrar
 
-Todas as páginas.
+Disponível no **Site Editor (VTEX)** em todas as páginas.
 
-URL de acesso: [lojaarno.myvtex.com/admin/cms/site-editor](https://lojaarno.myvtex.com/admin/cms/site-editor)
+Caminho geral:
+
+- Admin VTEX → CMS → Site Editor
 
 ## Campos
-
-![image](../../assets/site-editor/top-black-bar-campos.png)
 
 ### Link do Blog
 

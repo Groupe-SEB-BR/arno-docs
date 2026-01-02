@@ -168,7 +168,6 @@ Funciona como elemento visual de apoio ao conteúdo principal.
 
 ## Observações finais
 
-- O componente é ideal para ambientes multibranding
 - Permite organizar conteúdo por marca ou categoria de forma visual
 - Toda a gestão é feita diretamente pelo Site Editor
 - Não requer configuração técnica adicional

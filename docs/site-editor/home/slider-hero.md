@@ -6,34 +6,25 @@
 Slider Hero
 ```
 
-![image](../../assets/site-editor/slider-hero.png)
-
 ## Visão Geral
 
 O Slider Hero é um componente de carrossel de imagens posicionado no topo da página inicial. Este componente exibe uma sequência de banners promocionais em rotação automática, otimizados tanto para desktop quanto para dispositivos móveis. Cada slide contém uma imagem específica para cada tipo de dispositivo e um link de destino, permitindo direcionar os usuários para páginas de produtos, promoções ou categorias específicas. É um elemento estratégico para destacar campanhas, lançamentos e ofertas principais da loja.
 
 ## Onde encontrar
 
-Home Arno, Tefal e Rochedo.
+Disponível no **Site Editor (VTEX)**, nas homes da loja (Arno, Rochedo e Tefal).
 
-URLs de acesso:
+Caminho geral:
 
-- [lojaarno.myvtex.com/admin/cms/site-editor](https://lojaarno.myvtex.com/admin/cms/site-editor)
-- [lojaarno.myvtex.com/admin/cms/site-editor/tefal](https://lojaarno.myvtex.com/admin/cms/site-editor/tefal)
-- [lojaarno.myvtex.com/admin/cms/site-editor/rochedo](https://lojaarno.myvtex.com/admin/cms/site-editor/rochedo)
+- Admin VTEX → CMS → Site Editor
 
 ## Campos
-
-![image](../../assets/site-editor/slider-hero-campos.png)
-![image](../../assets/site-editor/slider-hero-campos-2.png)
 
 ### Ativar Croct
 
 Esse campo foi descontinuado
 
 ### Slides
-
-![image](../../assets/site-editor/slider-hero-campos-slides.png)
 
 Campo que recebe todas as imagens que vão ser renderizadas no Slider da home.
 

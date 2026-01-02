@@ -50,6 +50,10 @@ nav:
     - Pixel APP: custom-features/global/pixel-app.md
   - Site Editor:
     - Top Black Bar: site-editor/header/top-black-bar.md
+    - Black Button: site-editor/header/black-button.md
+    - Menu Desktop: site-editor/header/menu-desktop.md
+    - Menu Mobile: site-editor/header/menu-mobile.md
+    - Search Header:  site-editor/pdc/banner.md
     - Slider Hero: site-editor/home/slider-hero.md
     - Ofertas Relâmpago: site-editor/home/ofertas-relampago.md
     - Seleção Especial: site-editor/home/selecao-especial.md
@@ -57,8 +61,7 @@ nav:
     - Barra de Benefícios: site-editor/home/barra-de-beneficios.md
     - Shelf Lancamentos: site-editor/home/shelf-lancamentos.md
     - Vitrine multibranding: site-editor/home/vitrine-multibranding.md
-    - SEO Home: site-editor/home/seo-home.md
-    - SEO PDC: site-editor/pdc/seo-pdc.md
+    - SEO: site-editor/pdc/seo-pdc.md
 theme:
   name: material
   font:

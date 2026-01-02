@@ -1,9 +1,10 @@
-# Banner principal
+# Search Header
 
 ## Nome do componente
 
 ```text
-Coleção - Search Header
+Coleção 
+└── Search Header
 ```
 
 ## Onde encontrar
@@ -36,6 +37,7 @@ Aplicar para
 - este template `(usar essa opção caso for o mesmo texto para todas as categorias)`
 
 É possível gerenciar todas as versões criadas e ativar e desativar o conteúdo dependendo da necessidade de campanhas diferentes, etc.
+
 ### Banner Image Desktop
 
 Campo para upload da **imagem principal do banner** exibida em dispositivos desktop.

@@ -1,9 +1,12 @@
-# SEO Páginas de Busca
+# SEO
 
 ## Nome do componente
 
 ```text
-Ativar/Desativar texto SEO > SEO text - Container > Componente ver mais > SEO text - Search
+Ativar/Desativar texto SEO
+└── SEO text - Container
+  └── Componente ver mais
+    └── SEO text - Search
 ```
 
 ## Onde encontrar

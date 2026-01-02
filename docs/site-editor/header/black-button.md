@@ -10,7 +10,7 @@ Menu Desktop SEB
 
 ## Visão Geral
 
-O Top Black Bar é um componente de barra superior que exibe informações promocionais e links importantes no topo de todas as páginas do site. Este componente possui fundo escuro e apresenta três seções principais: um link para o blog, um link de bônus e um texto central destacando benefícios da loja (como parcelamento e desconto no PIX). É um elemento estratégico para comunicação institucional e promocional, mantendo-se fixo e visível durante a navegação.
+O Black Button é um componente que insere na barra de menu do header um botão para redirecionar o usuário para alguma campanha que esteja sendo destacada.
 
 ## Onde encontrar
 
@@ -22,35 +22,27 @@ URL de acesso: [lojaarno.myvtex.com/admin/cms/site-editor](https://lojaarno.myvt
 
 ### Ativar Black Button
 
-Campo para o link de redirecionamento que leva à página inicial do blog Arno.
-
-Exemplo: `/blog`
+Campo para mostrar ou esconder o botão.
 
 ### Ícone do Black Button
 
-Campo para o texto que será mostrado no link de redirecionamento do blog.
+Campo para o ícone que será mostrado no botão.
 
-Exemplo: `Blog Arno.com`
+Exemplo: `Lançamentos`
 
 ### Link do Black Button
 
-Campo para o link bônus que é renderizado ao lado do link do blog.
+Campo para o link de redirecionamento.
 
-Exemplo: `/bonus`
+Exemplo: `/249?map=productClusterIds`
 
 ### Texto do Black Button
 
-Campo para o texto do link bônus.
+Campo para o texto do botão.
 
 Exemplo: `Bônus`
 
 ## Observações
 
-- Os links devem ser relativos à raiz do site. Exemplo: `/bonus`
+- O link deve ser relativo à raiz do site. Exemplo: `/bonus`
 - Recomenda-se manter os textos curtos
-
-## Comportamento
-
-- Os links abrem em uma nova aba
-- Cor de fundo: preto (#3b3c4b)
-- Cor do texto: branco (#FFFFFF)
