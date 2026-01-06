@@ -35,8 +35,6 @@ Aplicar para
 
 É possível gerenciar todas as versões criadas e ativar e desativar o conteúdo dependendo da necessidade de campanhas diferentes, etc.
 
-## Configurações do componente
-
 ### Número máximo de itens por página
 
 Define quantos produtos serão exibidos por página na coleção.
