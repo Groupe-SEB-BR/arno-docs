@@ -48,6 +48,26 @@ nav:
     - Checkout UI Custom: custom-features/checkout/checkout-ui-custom.md
   - Global:
     - Pixel APP: custom-features/global/pixel-app.md
+  - Site Editor:
+    - Top Black Bar: site-editor/header/top-black-bar.md
+    - Black Button: site-editor/header/black-button.md
+    - Menu Desktop: site-editor/header/menu-desktop.md
+    - Menu Mobile: site-editor/header/menu-mobile.md
+    - Search Header:  site-editor/search/banner.md
+    - Coleção de produtos: site-editor/search/collection.md
+    - Slider Hero: site-editor/home/slider-hero.md
+    - Ofertas Relâmpago: site-editor/home/ofertas-relampago.md
+    - Seleção Especial: site-editor/home/selecao-especial.md
+    - Main Categories: site-editor/home/main-categories.md
+    - Barra de Benefícios: site-editor/home/barra-de-beneficios.md
+    - Shelf Lancamentos: site-editor/home/shelf-lancamentos.md
+    - Vitrine multibranding: site-editor/home/vitrine-multibranding.md
+    - Marcas Home: site-editor/home/marcas-home.md
+    - Newsletter Home: site-editor/home/newsletter.md
+    - SEO: site-editor/search/seo-pdc.md
+  - VTEX:
+    - Nova Página Coleção: vtex/new-collection-page.md
+    - Como alimentar o Blog Arno: vtex/blog-masterdata.md
 theme:
   name: material
   font:
