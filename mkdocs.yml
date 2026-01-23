@@ -65,9 +65,11 @@ nav:
     - Marcas Home: site-editor/home/marcas-home.md
     - Newsletter Home: site-editor/home/newsletter.md
     - SEO: site-editor/search/seo-pdc.md
+    - LP Leads: site-editor/institutional/lp-leads.md
   - VTEX:
     - Nova Página Coleção: vtex/new-collection-page.md
     - Como alimentar o Blog Arno: vtex/blog-masterdata.md
+    - Como criar nova Landing Page de Leads: vtex/new-lp-leads.md
 theme:
   name: material
   font:

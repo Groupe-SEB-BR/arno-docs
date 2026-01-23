@@ -4,6 +4,8 @@ Componente para exibir uma barra de menu superior com suporte multi-brand (Arno,
 
 ![image](../../assets/new-menu-bar.jpg)
 
+// todo atualizar com conteudo sobre os sub menus
+
 ## Uso
 
 react/NewMenuBar.tsx
