@@ -1,5 +1,7 @@
 # Awin Cookies
 
+// update after deploy
+
 Componente React que gerencia rastreamento de conversões do Awin, sincronizando parâmetros de origem de tráfego com o orderForm.
 
 ## Uso

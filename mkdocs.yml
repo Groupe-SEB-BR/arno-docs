@@ -72,6 +72,7 @@ nav:
     - Nova Página Coleção: vtex/new-collection-page.md
     - Como alimentar o Blog Arno: vtex/blog-masterdata.md
     - Como criar nova Landing Page de Leads: vtex/new-lp-leads.md
+    - Como alterar o valor do desconto do PIX: vtex/pix-value.md
 theme:
   name: material
   font:
