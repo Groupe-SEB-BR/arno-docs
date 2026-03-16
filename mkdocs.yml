@@ -4,8 +4,10 @@ nav:
     - Meta Tags: custom-features/header/meta-tags.md
     - Data Structure: custom-features/header/data-structure.md
     - Black Bar: custom-features/header/top-black-bar.md
-    - Menu Bar: custom-features/header/new-menu-bar.md
     - Black Button: custom-features/header/black-button.md
+    - Menu Multibranding: custom-features/header/menu-multibranding.md
+    - Menu SEB Desktop: custom-features/header/menu-seb-desktop.md
+    - Menu SEB Mobile: custom-features/header/menu-seb-mobile.md
   - Account:
     - Script Yami: custom-features/account/script-yami.md
   - Home:
