@@ -1,4 +1,4 @@
-# Custom Croct Popup
+# Banner Coupon Popup
 
 Componente que monitora alterações no carrinho e exibe um popup com cupom de desconto após um período configurável. Ideal para capturar a atenção do usuário após adicionar produtos ao carrinho.
 
@@ -7,23 +7,27 @@ Componente que monitora alterações no carrinho e exibe um popup com cupom de d
 ## Uso
 
 ```javascript
-import MinicartChecker from './components/MinicartChecker';
+import CouponBanner from './components/CouponBanner'
 
-export default MinicartChecker;
+export default CouponBanner
 ```
 
 ```json
-"custom-arno-minicart-checker": {
-  "component": "MinicartChecker"
-}
+"custom-banner-coupon-popup": {
+  "component": "CouponBanner",
+  "composition": "children"
+},
 ```
 
 ## Exemplo
 
 ```jsx
-"minicart": {
-  "blocks": ["minicart-base-content"],
-  "children": ["custom-arno-minicart-checker"]
+"flex-layout.row#mainContent-desk-minicart-checker-popup": {
+  "title": "Minicart Checker Pop-up Desktop",
+  "children": ["custom-banner-coupon-popup"],
+  "props": {
+    "blockClass": "mainContent-desk-minicart-checker-popup"
+  }
 }
 ```
 

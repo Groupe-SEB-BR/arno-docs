@@ -9,7 +9,7 @@ nav:
   - Account:
     - Script Yami: custom-features/account/script-yami.md
   - Home:
-    - Custom Croct Popup: custom-features/home/custom-croct-popup.md
+    - Banner Coupon Popup: custom-features/home/banner-coupon-popup.md
     - Newsletter Popup: custom-features/home/newsletter-popup.md
     - Slider Hero: custom-features/home/slider-hero.md
     - Main Categories: custom-features/home/main-categories.md
@@ -55,6 +55,7 @@ nav:
     - Black Button: site-editor/header/black-button.md
     - Menu Desktop: site-editor/header/menu-desktop.md
     - Menu Mobile: site-editor/header/menu-mobile.md
+    - Banner Coupon Popup: site-editor/header/banner-coupon-popup.md
     - Search Header:  site-editor/search/banner.md
     - Coleção de produtos: site-editor/search/collection.md
     - Slider Hero: site-editor/home/slider-hero.md
