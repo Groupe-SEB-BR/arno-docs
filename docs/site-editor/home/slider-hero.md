@@ -20,10 +20,6 @@ Caminho geral:
 
 ## Campos
 
-### Ativar Croct
-
-Esse campo foi descontinuado
-
 ### Slides
 
 Campo que recebe todas as imagens que vão ser renderizadas no Slider da home.

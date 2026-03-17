@@ -1,6 +1,6 @@
 # Slider Hero
 
-Este componente exibe um slider de banners na página inicial com suporte a Croct para personalização, tracking de cliques via Google Analytics e cronômetro countdown opcional.
+Este componente exibe um slider de banners na página inicial e tracking de cliques via Google Analytics.
 
 ![image](../../assets/slider-hero.png)
 
@@ -41,12 +41,6 @@ O componente exibe um carrossel de banners com:
 - **Dots de Navegação**: Indicadores visuais de posição
 - **Pause on Hover**: Pausa ao passar o mouse
 
-### Integração com Croct
-
-- **Personalização Dinâmica**: Banners personalizados por URL
-- **Rotas Suportadas**: Home (`/`), Rochedo (`/rochedo`), Tefal (`/tefal`)
-- **Tracking**: Eventos de clique e goals personalizados
-
 ### Cronômetro Countdown
 
 - **Ativação Opcional**: Controlado via Site Editor
@@ -56,7 +50,6 @@ O componente exibe um carrossel de banners com:
 ### Sistema de Tracking
 
 - **Google Analytics**: Evento `clicou_banner_{index}` 
-- **Croct Goals**: `carousel-home-click`
 - **ID de Tracking**: `G-WBSPVQFS2L`
 
 ## Estrutura de Dados
@@ -65,7 +58,6 @@ O componente exibe um carrossel de banners com:
 
 ```typescript
 {
-  croctActive: boolean,      // Ativa integração Croct
   enableCountdown: boolean,  // Ativa cronômetro
   targetDate: string,        // Data alvo (ISO 8601)
   slides: Array<{
@@ -82,21 +74,12 @@ O componente exibe um carrossel de banners com:
 ### Renderização Condicional
 
 1. **Loading**: Exibe componente Loading durante carregamento inicial
-2. **Croct Ativo**: Usa banners do Croct se `croctActive` for `true`
-3. **Fallback**: Usa slides do schema se Croct não retornar conteúdo
 
 ### Detecção de Dispositivo
 
 - Breakpoint: `768px`
 - Event listener para redimensionamento
 - Limpeza de listeners no unmount
-
-### Navegação com Tracking
-
-Ao clicar em um banner:
-1. Envia goal para Croct
-2. Atualiza perfil do usuário
-3. Dispara evento para Google Analytics
 
 ## Configuração de Slider
 
@@ -120,11 +103,6 @@ Ao clicar em um banner:
 
 ```typescript
 {
-  croctActive: {
-    type: 'boolean',
-    title: 'Ativar Croct',
-    default: false
-  },
   slides: {
     type: 'array',
     items: {
@@ -139,11 +117,6 @@ Ao clicar em um banner:
     format: 'date-time',
     default: '2024-11-29T00:00:00'
   },
-  enableCountdown: {
-    type: 'boolean',
-    title: 'Ativar Cronômetro',
-    default: false
-  }
 }
 ```
 
@@ -158,15 +131,9 @@ Ao clicar em um banner:
 - `react`: Hooks useState e useEffect
 - `react-slick`: Componente de slider
 - `slick-carousel`: CSS do carousel
-- CSS Modules: Estilos do countdown
-- Croct SDK: Personalização de conteúdo
 
 ## Observações
 
 1. Requer configuração via Site Editor para personalização
-2. Integração Croct opcional, funciona standalone
-3. Cronômetro aparece apenas no primeiro slide quando ativado
-4. Suporta upload de imagens via Site Editor
-5. Tracking automático de cliques e goals
-6. Rotas Croct configuradas: home, rochedo, tefal
-
+2. Suporta upload de imagens via Site Editor
+3. Tracking de cliques
