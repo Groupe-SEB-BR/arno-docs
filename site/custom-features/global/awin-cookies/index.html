@@ -2774,10 +2774,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sincronizacao-de-dados-de-sessao" class="md-nav__link">
+  <a href="#deteccao-de-origem-de-trafego" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Sincronização de Dados de Sessão
+        Detecção de Origem de Tráfego
       
     </span>
   </a>
@@ -2785,10 +2785,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mapeamento-de-parametros" class="md-nav__link">
+  <a href="#mapeamento-de-origem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mapeamento de Parâmetros
+        Mapeamento de Origem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sincronizacao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sincronização de Dados
       
     </span>
   </a>
@@ -2854,8 +2865,7 @@
 
 
 <h1 id="awin-cookies">Awin Cookies</h1>
-<p>// update after deploy</p>
-<p>Componente React que gerencia rastreamento de conversões do Awin, sincronizando parâmetros de origem de tráfego com o orderForm.</p>
+<p>Componente React que gerencia rastreamento de conversões do Awin, sincronizando parâmetros de origem de tráfego com a sessão e orderForm.</p>
 <h2 id="uso">Uso</h2>
 <p>react/AwinCookies.js</p>
 <div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">AwinCookies</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./components/AwinCookies&#39;</span><span class="p">;</span>
@@ -2871,22 +2881,29 @@
 <div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&quot;header-layout.desktop&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;children&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="s2">&quot;global-css&quot;</span><span class="p">,</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="s2">&quot;custom-arno-awin-cookies&quot;</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="s2">&quot;custom-arno-awin-cookies&quot;</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="p">]</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">},</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="funcionalidades">Funcionalidades</h2>
-<h3 id="sincronizacao-de-dados-de-sessao">Sincronização de Dados de Sessão</h3>
+<h3 id="deteccao-de-origem-de-trafego">Detecção de Origem de Tráfego</h3>
 <ul>
-<li>Busca dados públicos da sessão (<code>utm_source</code>, <code>awc</code>)</li>
-<li>Recupera <code>orderFormId</code> do checkout</li>
-<li>Atualiza customData do orderForm com informações do Awin</li>
+<li>Verifica <code>awaid</code> na URL</li>
+<li>Valida <code>utm_source=awin</code> nos parâmetros de URL e sessão</li>
+<li>Detecta referrers de mecanismos de busca (Google, Bing, Yahoo, DuckDuckGo, Yandex)</li>
+<li>Ignora tráfego interno do mesmo domínio</li>
 </ul>
-<h3 id="mapeamento-de-parametros">Mapeamento de Parâmetros</h3>
+<h3 id="mapeamento-de-origem">Mapeamento de Origem</h3>
 <ul>
 <li><code>utm_source=awin</code> → mapeado como <code>'aw'</code></li>
-<li>Outros valores mapeados como <code>'other'</code></li>
-<li><code>awc</code> (Awin Conversion ID) preservado ou definido como <code>'other'</code></li>
+<li>Mecanismos de busca → mapeado como <code>'other'</code></li>
+<li>Demais casos → mapeado como <code>'direct'</code></li>
+</ul>
+<h3 id="sincronizacao-de-dados">Sincronização de Dados</h3>
+<ul>
+<li>Atualiza sessão pública com origem detectada</li>
+<li>Sincroniza <code>utm_source</code> e <code>awc</code> (Awin Conversion ID) com customData do orderForm</li>
+<li>Converte <code>utm_source=awin</code> para <code>'aw'</code> no orderForm</li>
 </ul>
 <h2 id="dependencias">Dependências</h2>
 <ul>
@@ -2895,10 +2912,11 @@
 <h2 id="endpoints-utilizados">Endpoints Utilizados</h2>
 <ul>
 <li><code>GET /api/sessions</code> - Recupera dados de sessão</li>
+<li><code>PATCH /api/sessions</code> - Atualiza origem na sessão pública</li>
 <li><code>PUT /api/checkout/pub/orderForm/{orderFormId}/customData/awin</code> - Atualiza customData</li>
 </ul>
 <h2 id="tratamento-de-erros">Tratamento de Erros</h2>
-<p>Erros nas requisições são logados no console com prefixo <code>[AWIN]</code> e não impedem execução.</p>
+<p>Erros nas requisições são logados no console com prefixo <code>[AWIN]</code> e não impedem a execução do componente.</p>
 
 
 
