@@ -49,6 +49,8 @@ O componente **Menu** permite exibir e configurar a navegação principal do sit
 - Links personalizados
 - Ícones e imagens de destaque
 
+Caso aja a necessidade de alteração na ordenação dos links, ou criação de novas sessões como "Para Você", é preciso que o desenvolvedor altere diretamente no código.
+
 ## Campos de cada item do menu
 
 ### Código

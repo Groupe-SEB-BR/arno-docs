@@ -27,35 +27,39 @@ store/interfaces.json
   "blocks": [
     "__fold__",
     "order-placed",
-    "custom-arno-awin-conversion",
+    "custom-arno-awin-conversion"
   ]
 },
 ```
 
 ## Funcionalidades
 
-### Definição de Origem de Tráfego
-
-- Detecta origem via `awaid` ou `utm_source=awin`
-- Identifica tráfego de buscadores (Google, Bing, Yahoo, DuckDuckGo, Yandex)
-- Classifica como direto ou externo
-- Armazena origem em cookie por 30 dias
-
 ### Rastreamento de Conversões
 
 - Monitora eventos `orderPlaced` no dataLayer
-- Dispara múltiplos pixels Awin (sread.js, sread.php, alt.php)
-- Rastreia grupo de comissão por marca e categoria
-- Envia cupom de desconto e identificadores de sessão
+- Dispara múltiplos pixels Awin em paralelo (sread.js, sread.php, alt.php, sread.img)
+- Rastreia valor total da transação e cupom de desconto
+- Envia identificador de sessão (cks) e URL de origem
+- Inclui modo fallback com imagem GIF
 
-### Mapeamento de Produtos
+### Mapeamento de Comissões por Categoria
 
-Suporta grupos de comissão específicos para:
+Suporta grupos de comissão específicos por marca e categoria:
 
-- **Nescafé Dolce Gusto**
-- **Arno** (20+ categorias de produtos)
-- **Rochedo** (panelas e utensílios)
-- **Tefal** (frigideiras e panelas)
+- **Arno** (29 categorias: acessórios, cafeteiras, ventiladores, electrodomésticos, etc.)
+- **Rochedo** (10 categorias: panelas, frigideiras, formas, utensílios)
+- **Tefal** (10 categorias: panelas, frigideiras, facas, utensílios)
+- **Default** (categorias não mapeadas)
+
+Cada transação pode conter múltiplos produtos, agrupados por categoria com cálculo automático do valor total por grupo.
+
+### Armazenamento de Dados
+
+Utiliza `sessionStorage` para persistir dados de origem de tráfego durante a sessão:
+
+- `awin_origin`: Canal de origem detectado
+- `awin_awc`: Identificador Awin
+- `awin_utm_source`: Parâmetro UTM source
 
 ## Dependências
 
@@ -65,5 +69,7 @@ Suporta grupos de comissão específicos para:
 
 - `merchantId`: '108626' (ID Awin)
 - `currency`: 'BRL'
-- `cookieDomain`: '.arno.com.br'
-- `cookieLengthDays`: 30
+
+## Eventos Monitorados
+
+- `orderPlaced`: Dispara rastreamento com dados da transação (ID, subtotal, cupom, produtos)
