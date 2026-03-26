@@ -26,6 +26,10 @@ nav:
     - Redirect to Reviews: custom-features/pdp/redirect-reviews.md
   - Search:
     - Meta Tags Categories: custom-features/search/meta-tags-categories.md
+    - Banner de coleções de produtos: custom-features/search/collections-seo.md
+    - Banner de SEO para PDC: custom-features/search/seo-pdc.md
+    - Comparador PDC: custom-features/search/comparator-pdc.md
+    - Botão do Comparador PDC: custom-features/search/comparator-button.md
   - Minicart:
     - Gift Bar: custom-features/minicart/arno-minicart-giftbar.md
     - Coupon Form: custom-features/minicart/coupon-form-minicart.md
@@ -43,15 +47,16 @@ nav:
     - Vendas Corporativas: custom-features/institutional/venda-corporativa-form.md
     - Black Friday: custom-features/institutional/black-friday.md
     - Store Locator: custom-features/institutional/store-locator.md
+    - Manual de Produtos: custom-features/institutional/manual-de-produtos.md
   - Shelves:
     - Ofertas Relâmpago: custom-features/shelves/ofertas-relampago.md
   - Checkout:
-    - Awin Cookies: custom-features/checkout/awin-cookies.md
     - Awin Conversion: custom-features/checkout/awin-conversion.md
     - Checkout UI Custom: custom-features/checkout/checkout-ui-custom.md
     - Cross Selling: custom-features/checkout/cross-selling.md
   - Global:
     - Pixel APP: custom-features/global/pixel-app.md
+    - Awin Cookies: custom-features/global/awin-cookies.md
   - Site Editor:
     - Top Black Bar: site-editor/header/top-black-bar.md
     - Black Button: site-editor/header/black-button.md

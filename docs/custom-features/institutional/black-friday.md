@@ -50,7 +50,7 @@ BlackFriday2025 (Component)
 
 - `Banner`: Banner principal acima da dobra
 - `Bar`: Barra de benefícios
-- `FlashSales`: Vitrines de produtos com promoções (ofertas relâmpago e descontos progressivos). Para mais detalhes ver [Flash Sales](./../shelves/flash-sales.md)
+- `FlashSales`: Vitrines de produtos com promoções (ofertas relâmpago e descontos progressivos). Para mais detalhes ver [Flash Sales](./../shelves/ofertas-relampago.md)
 - `Seo`: Conteúdo otimizado para SEO
 
 ### Scroll Automático para Promoções
